@@ -52,7 +52,6 @@ item_4 = item(id=1, name="Brita", weight=1, value=6)
 
 items_list = [item_1, item_2, item_3, item_4]
 
-# Exemplo de uso
 capacity = 5
 n = len(items_list)
 
