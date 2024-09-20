@@ -13,9 +13,18 @@ class item:
             f"ID: {self.id} Name:{self.name} Weight: {self.weight} Value: {self.value}"
         )
 
+# Função auxiliar para ordenar os itens pela relação valor/peso
+def sort_by_values(items):
+    for i in range(len(items)):
+        for j in range(i + 1, len(items)):
+            if items[i].value < items[j].value:
+                # Trocar de posição se o item j for melhor que o item i
+                items[i], items[j] = items[j], items[i]
+
 
 def greedy_knapsack(capacity, items):
     # Ordenando itens pela maior relação valor/peso
+    sort_by_values(items)
 
     total_value = 0
     total_weight = 0

@@ -37,7 +37,7 @@ def knapsack(capacity, items, n):
             # print(f"Peso disponível = {w}")
             # print(f"Valores dos itens inclusos = {dp[i][w]}\n")
 
-    print("Matriz Programação Dinâmica:")
+    print("\nMatriz Programação Dinâmica:")
     for row in dp:
         print(row)
     # O valor máximo será dp[n][capacity]
